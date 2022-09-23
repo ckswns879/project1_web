@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html 시멘틱태그</title>
+</head>
+<body>
+    <header>
+        김찬준
+    </header>
+    <style>
+        /*내부스타일*/
+        *{
+            margin: 0px;
+        }
+        span {
+            background-color: black;
+            width: 300px;
+            height: 50px;
+        }
+        /*태그선택자*/
+        ul {
+            background-color: chartreuse;
+        }
+        /*클래스선택자*/
+        .idc1{
+            background-color: darkorange;
+        }
+        /*아이디선택자*/
+        #sid2{
+            background-color: brown;
+        }
+        /*복합 선택자*/
+        header, footer{
+            background-color: blueviolet;
+            /*margin: 20px;*/
+           /* margin-top: 20px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+            margin-left: 10px;*/
+            margin: 10px 20px 30px 50px;
+            padding: 10px;
+            width: 500px;
+            height: 50px;
+            border: 10px;
+            border-color: red;
+            border-style: dashed;
+        }
+        nav>ul{
+            background-color: crimson;
+            list-style: none;
+        }
+        aside li{
+            background-color: violet;
+        }
+        section[id]{
+            color: red;
+        }
+        /*가상선택자*/
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            background-color: white;
+            color: coral;
+        }
+        a:active{
+            background-color: aqua;
+            color: black;
+        }
+        h1{
+            background-color: yellow;
+            border-style: solid;
+            border-left: 50px;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-color: black;
+            border: 10px;
+            margin: 10px;
+        }
+        
+        
+    </style>
+    <nav>
+        <ul>
+            <li><a href="#sid1">개인정보</a></li>
+            <li><a href="#sid2">학력사항</a></li>
+            <li><a href="#sid3">자격사항</a></li>
+            <li><a href="#sid4">사용가능언어</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sid1">
+            <h1>개인정보</h1>
+            <ul>
+                <li class="idc1"></li>
+                <li class="idc2"></li>
+            </ul>
+        </section>
+        <section id="sid2">
+            <h1>학력사항</h1>
+            <ul>
+                <li class="idc1"></li>
+                <li class="idc2"></li>
+            </ul>
+        </section>
+        <section id="sid3">
+            <h1>자격사항</h1>
+            <ul>
+                <li class="idc1"></li>
+                <li class="idc2"></li>
+            </ul>
+        </section>
+        <section id="sid4">
+            <h1>사용가능언어</h1>
+            <ul>
+                <li class="idc1"></li>
+                <li class="idc2"></li>
+            </ul>
+        </section>
+    </main>
+    <aside>
+                <section id="sid5">
+            <h1>참고사이트</h1>
+            <ul>
+                <li class="idca1"></li>
+                <li class="idca1"></li>
+            </ul>
+        </section>
+    </aside>
+    <footer>
+마지막
+    </footer>
+</body>
+</html>
